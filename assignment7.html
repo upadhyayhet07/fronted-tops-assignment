@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Grid Layout</title>
+  <style>
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 8px;
+      transition: background 0.2s;
+    }
+    .primary {
+      background: #007bff;
+      color: #fff;
+    }
+    .primary:hover {
+      background: #0056b3;
+    }
+    .secondary {
+      background: #e0e0e0;
+      color: #222;
+    }
+    .secondary:hover {
+      background: #c0c0c0;
+    }
+    .danger {
+      background: #dc3545;
+      color: #fff;
+    }
+    .danger:hover {
+      background: #a71d2a;
+    }
+  </style>
 </head>
 <body>
-    <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; gap: 20px; background-color: #f0f0f0;">
-        <li><a href="#home" style="text-decoration: none; color: black;">Home</a></li>
-        <li><a href="#about" style="text-decoration: none; color: black;">About Me</a></li>
-        <li><a href="#portfolio" style="text-decoration: none; color: black;">Portfolio</a></li>
-        <li><a href="#contact" style="text-decoration: none; color: black;">Contact</a></li>
-    </ul>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is a simple portfolio page example.</p>
+  <button class="btn primary">Primary</button>
+  <button class="btn secondary">Secondary</button>
+  <button class="btn danger">Danger</button>
 </body>
 </html>

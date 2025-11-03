@@ -1,22 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Explore New York City</title>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <style>
+    body {
+      background: #f4f4f4;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .contact-form {
+      background: #fff;
+      padding: 32px 28px;
+      border-radius: 12px;
+      box-shadow: 0 2px 24px rgba(0,0,0,0.09);
+      width: 320px;
+      margin: auto;
+    }
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 18px;
+      color: #333;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 16px;
+      border: 2px solid #eee;
+      border-radius: 7px;
+      background: #fafafa;
+      font-size: 1rem;
+      transition: border 0.25s;
+      outline: none;
+      resize: none;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border: 2px solid #665df7;
+      background-color: #f0f3ff;
+    }
+    .contact-form button {
+      background: #665df7;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      padding: 12px 0;
+      width: 100%;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .contact-form button:hover {
+      background: #4a41b9;
+    }
+  </style>
 </head>
 <body>
-  <h1>Explore New York City</h1>
-  <p>New York City is one of the most vibrant and exciting cities in the world, known for its iconic landmarks, diverse culture, and endless opportunities for adventure.</p>
-  <h2>Map of New York City</h2>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24180.423377966287!2d-74.00601518496277!3d40.712728165974476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af18b2e2c1%3A0x2e187bcfafc7054a!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1684242557536!5m2!1sen!2sin"
-    width="600"
-    height="450"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-  <h2>Discover New York City</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=TEjHDF9QXTY" title="YouTube video about New York City" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <form class="contact-form">
+    <h2>Contact Us</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
 </body>
 </html>

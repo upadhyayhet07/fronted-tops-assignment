@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Navigation Bar</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      background-color: #007bff; 
+      padding: 10px 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      margin: 0 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #0056b3; 
+    }
+  </style>
 </head>
 <body>
-     <h2>Contact Form</h2>
 
-  <form action="#" method="post">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
-
-    <input type="submit" value="Submit">
-  </form>
-
+  <div style="text-align: center; margin-top: 50px;">
+    <h2>Welcome to My Website</h2>
+    <p>This is a simple navigation bar created using HTML and CSS.</p>
+  </div>
 </body>
 </html>
-</body>
-</html>
-
- 

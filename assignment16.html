@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        main {
+            flex: 2;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #e9e9e9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            main, aside {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Practical Assignment</h1>
+    <div class="container">
+        <main>
+            <h2>Main Content</h2>
+            <p>This is the main content of the web page. On larger screens, it appears next to the sidebar. It contains the primary information for the user.</p>
+            <p>The layout is responsive, meaning it adjusts to the size of the screen. Try resizing your browser window to see the effect of the media query.</p>
+        </main>
+        <aside>
+            <h2>Sidebar</h2>
+            <p>This is the sidebar. On screens smaller than 768px, this section will move below the main content.</p>
+        </aside>
+    </div>
+</body>
+</html>

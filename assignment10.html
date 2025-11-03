@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tech News</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Pseudo-Classes and Pseudo-Elements</title>
+
+  <style>
+    /* Style links with pseudo-classes */
+    a:link {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: green;
+    }
+
+    /* Style only the first line of the paragraph */
+    p::first-line {
+      font-weight: bold;
+      color: darkorange;
+      font-size: 1.2em;
+    }
+
+    /* Add decorative ::before element to heading */
+    h1::before {
+      content: "★ ";
+      color: gold;
+      font-size: 1.5em;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Tech News</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Latest News</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <article>
-                <h2>AI Breakthrough Announced</h2>
-                <p>Scientists revealed a new artificial intelligence model that breaks records in speed and accuracy.</p>
-            </article>
-            <article>
-                <h2>Smartphones Get Smarter</h2>
-                <p>Next-generation smartphones now feature advanced connectivity and security features.</p>
-            </article>
-            <article>
-                <h2>Quantum Computing Progress</h2>
-                <p>Researchers made strides in quantum computing, promising faster data processing in future devices.</p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>Contact us: info@technews.com</p>
-    </footer>
+
+  <h1>My Favorite Websites</h1>
+
+  <p>
+    Welcome to my webpage! Here are some of my favorite websites. 
+    Feel free to explore them and see what interests you.
+  </p>
+
+  <ul>
+    <li><a href="https://www.google.com">Google</a></li>
+    <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+    <li><a href="https://www.github.com">GitHub</a></li>
+  </ul>
+
 </body>
 </html>

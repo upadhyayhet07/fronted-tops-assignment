@@ -1,52 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Course Schedule</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Flexbox Layout</title>
   <style>
-    table {
-      border-collapse: collapse;
-      width: 60%;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    th, td {
-      border: 1px solid black; 
-      padding: 10px;           
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      background-color: #fff;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .box {
+      background-color: #4CAF50;
+      color: white;
+      padding: 40px;
+      border-radius: 8px;
+      width: 80%;
       text-align: center;
     }
-    th {
-      background-color: white;
+
+    @media (min-width: 768px) {
+      main {
+        flex-direction: row;
+      }
+      .box {
+        width: 25%;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Course Schedule</h1>
-  <table>
-    <tr>
-      <th>Day</th>
-      <th>Course Name</th>
-      <th>Time</th>
-    </tr>
-    <tr>
-      <td>Monday</td>
-      <td>Mathematics</td>
-      <td>10:00 AM - 11:30 AM</td>
-    </tr>
-  <tr>
-      <td>Tuesday</td>
-      <td>Physics</td>
-      <td>11:00 AM - 12:00 PM</td>
-    </tr>
-    <tr>
-      <td>Wednesday</td>
-      <td>Chemistry</td>
-      <td>2:00 PM - 3:00 PM</td>
-    </tr>
-    <tr>
-      <td>Thursday</td>
-      <td>Computer Science</td>
-      <td>3:00 PM - 4:00 PM</td>
-    </tr>
-  </table>
-</body>
-</html>
+  <header>
+    <h1>My Flexbox Layout</h1>
+  </header>
+
+  <main>
+    <div class="box">Content Box 1</div>
+    <div class="box">Content Box 2</div>
+    <div class="box">Content Box 3</div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flexbox Assignment</p>
+  </footer>
 </body>
 </html>

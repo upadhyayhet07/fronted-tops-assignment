@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Example Page</title>
+
+  <!-- ✅ Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* ====== Custom CSS to enhance Bootstrap look ====== */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #0d6efd;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+      font-weight: 500;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Bootstrap Site</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ Hero Section -->
+  <section class="hero">
+    <h1>Welcome to My Bootstrap Website</h1>
+    <p class="lead">Using the power of the Bootstrap Grid and Components</p>
+    <a href="#" class="btn btn-light btn-lg">Get Started</a>
+  </section>
+
+  <!-- ✅ Bootstrap Grid System Example -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Our Projects (Grid Layout)</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Web Project">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">Responsive websites using HTML, CSS, and Bootstrap grid layouts.</p>
+            <a href="#" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="App Design">
+          <div class="card-body">
+            <h5 class="card-title">App Design</h5>
+            <p class="card-text">Modern mobile app interfaces designed with user experience in mind.</p>
+            <a href="#" class="btn btn-success">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="UI Design">
+          <div class="card-body">
+            <h5 class="card-title">UI/UX Design</h5>
+            <p class="card-text">Designing clean and functional user interfaces for web and mobile.</p>
+            <a href="#" class="btn btn-warning text-white">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>&copy; 2025 My Bootstrap Site | Built with ❤ and Bootstrap 5</p>
+  </footer>
+
+  <!-- ✅ Bootstrap JS (for navbar toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

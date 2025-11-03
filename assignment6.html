@@ -1,34 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Grid Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .image-box {
+      background-color: #4CAF50;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 800px) {
+      main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hetu</h1>
-    <img src="c:\Users\Shree\OneDrive\Pictures\Camera Roll 1\hetpic.jpeg.jpg" alt="Profile picture of Hetu" width="200">
-    <h2>Introduction</h2>
-    <p>Hello! My name is Hetu. I am a student who loves learning new things, exploring technology, and solving problems creatively.</p>
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>Python Programming</li>
-        <li>Problem Solving</li>
-    </ul>
-    <h2>Hobbies</h2>
-    <ol>
-        <li>Playing cricket</li>
-        <li>Playing football</li>
-        <li>Traveling</li>
-        <li>Coding</li>
-    </ol>
-    <h2>Contact</h2>
-    <p>
-        Email: <a href="mailto:upadhyayhet246@gmail.com">upadhyayhet246@gmail.com</a><br>
-        Phone: +91-9081574309
-    </p>
+  <header>
+    <h1>My Grid Gallery</h1>
+  </header>
+
+  <main>
+    <div class="image-box">Image 1</div>
+    <div class="image-box">Image 2</div>
+    <div class="image-box">Image 3</div>
+    <div class="image-box">Image 4</div>
+    <div class="image-box">Image 5</div>
+    <div class="image-box">Image 6</div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Grid Layout Assignment</p>
+  </footer>
 </body>
 </html>
-
-
-    

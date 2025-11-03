@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Product Card</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fafafa;
+    font-family: Arial, sans-serif;
+  }
+
+  .card {
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .card h2 {
+    margin: 10px 0;
+  }
+
+  .card p {
+    color: #555;
+    padding: 0 10px;
+  }
+
+  .price {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img src="c:\images\watch-1.jpeg" alt="Product">
+    <h2>Stylish Watch</h2>
+    <p>Modern and elegant wristwatch for all occasions.</p>
+    <div class="price">$99.99</div>
+  </div>
+</body>
+</html>
